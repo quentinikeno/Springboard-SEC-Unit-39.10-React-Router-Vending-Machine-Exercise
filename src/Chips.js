@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import chipSrc from "./Chips.png";
 import { v4 as uuid } from "uuid";
+import "./Chips.css";
 
 const Chips = () => {
 	const [chipBags, setChipBags] = useState([]);
@@ -14,6 +15,7 @@ const Chips = () => {
 
 	const bags = chipBags.map((chipBag) => (
 		<img
+			className="Chips-bag"
 			key={uuid()}
 			src={chipSrc}
 			alt="Bag of Chips"
