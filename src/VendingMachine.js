@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "./VendingMachine.css";
 
 const VendingMachine = () => {
 	return (
-		<div>
+		<div className="VendingMachine">
 			<h1>Hello I am a vending machine. What would you like to eat?</h1>
 			<ul>
 				<li>
